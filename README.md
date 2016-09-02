@@ -1,3 +1,5 @@
+# The Go Programming Language - Extended code examples and exercise solutions
+
 This repository contains code based on the examples and exercises from the book
 "The Go Programming Language", by Alan A. A. Donovan and Brian W, Kernighan, see
 http://www.gopl.io.
