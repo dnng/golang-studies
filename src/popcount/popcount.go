@@ -27,16 +27,16 @@ func PopCount(x uint64) int {
 func PopCountLoop(x uint64) int {
 	var count int
 	for i := 0; i < 8; i++ {
-		count += int(byte(x>>(i*8)))
+		count += int(pc[byte(x>>(uint(i)*8))])
 	}
 	return count
 }
 
-func PopCountShift(x uint64) {
+func PopCountShift(x uint64) int {
 	var count int
-	while x != 0 {
+	for x != 0 {
 		x = x&(x-1)
-		count++
+		count += 1
 	}
 	return count
 }
